@@ -78,6 +78,10 @@ Since this extension is distributed via source code, follow these steps to insta
 
    * Click **Autofill Form** — the extension will populate all standard and custom fields on the page.
 
+⏳ **Note on Processing Time:**
+Because IEEE vTools relies on server-side requests to dynamically load state options, subcategories, speaker fields, and custom registration blocks, **autofilling may take a few seconds to finish completely**. Please wait a moment while the extension sequentially fills in all dynamic sections. it closes automatically when it's finished, allowing you to review before submitting the event!
+
+
 ## 📁 Repository Structure
 
 ```
