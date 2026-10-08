@@ -1,0 +1,33 @@
+{
+  "_metadata": {
+    "author": "Gil Ben Ami",
+    "repository": "https://github.com/GBAS-BCN/vTools-Helper",
+    "license": "GPL-3.0"
+  },
+  "manifest_version": 3,
+  "name": "vTools IEEE Event Autofill Assistant",
+  "version": "6.1.3",
+  "description": "Configurable autofill assistant for IEEE vTools events.",
+  "permissions": [
+	"storage",
+    "scripting",
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "Open vTools Create Event"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_ui": {
+    "page": "options.html",
+    "open_in_tab": true
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://vtools.ieee.org/*", "*://*.ieee.org/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ]
+}
