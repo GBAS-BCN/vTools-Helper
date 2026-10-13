@@ -25,7 +25,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://vtools.ieee.org/*", "*://*.ieee.org/*"],
+      "matches": ["https://events.vtools.ieee.org/tego_/event/*"],
       "js": ["content.js"],
       "css": ["styles.css"]
     }
